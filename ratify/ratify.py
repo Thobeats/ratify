@@ -49,10 +49,11 @@ class Ratify:
             "less_than_or_equal" : self.is_less_than_or_equal,
             "greater_than" : self.is_greater_than,
             "greater_than_or_equal" : self.is_greater_than_or_equal,
-            "mimes" : self.is_mimes
+            "mimes" : self.is_mimes,
+            "url" : self.is_url,
+            "file": self.is_file
         }
         return map
-
 
     def is_required(self, fields, key)->None:
         """Validates if a field is required"""
@@ -232,17 +233,9 @@ class Ratify:
 
     def is_mimes(self, fields, key, mimes):
         """checks the file type"""
-        value = fields[key]
+        value = fields.files[key]
         if value.split(".")[1] not in mimes.split(","):
-            error = "The {} field type must be of type {}".format(key, mimes)
-            self.__logError(key, error)
-
-    def is_base64(self, fields, key):
-        """checks if the value is a base64 string"""
-        value = fields[key]
-        check = re.fullmatch("data:image/([a-zA-Z]*);base64,([^\"]*)", value)
-        if not check:
-            error = "The {} field must be a base64 string".format(key)
+            error = "The {} field format is not allowed".format(key)
             self.__logError(key, error)
 
     def is_url(self, fields, key):
@@ -253,5 +246,58 @@ class Ratify:
             error = "The {} field must be a valid url".format(key)
             self.__logError(key, error)
 
+    def is_file(self, fields, key, allowable_file_extensions):
+        """checks if the value is a file"""
+        value = fields.files[key]
+        filename = value.filename
+        if filename.split(".")[1] not in allowable_file_extensions.split(","):
+            error = "The {} field format is not allowed".format(key)
+            self.__logError(key, error)
 
+    def is_ends_with(self, fields, key, ends_with):
+        """checks if the value ends with some characters"""
+        value = fields[key]
+        options = ends_with.split(",")
+        match = 0
+        for option in options:
+            if value.endswith(option):
+                match += 1
+        if match == 0:
+            error = "The {} field must end with {}".format(key, ends_with)
+            self.__logError(key, error)
 
+    def is_starts_with(self, fields, key, starts_with):
+        """checks if the value starts with some characters"""
+        value = fields[key]
+        options = starts_with.split(",")
+        match = 0
+        for option in options:
+            if value.startswith(option):
+                match += 1
+        if match == 0:
+            error = "The {} field must start with {}".format(key, starts_with)
+            self.__logError(key, error)
+
+    def is_in(self, fields, key, options):
+        """checks if the value is in the options"""
+        value = fields[key]
+        options = options.split(",")
+        if value not in options:
+            error = "The {} field must be in {}".format(key, options)
+            self.__logError(key, error)
+
+    def is_not_in(self, fields, key, options):
+        """checks if the value is not in the options"""
+        value = fields[key]
+        options = options.split(",")
+        if value in options:
+            error = "The {} field must not be in {}".format(key, options)
+            self.__logError(key, error)
+
+    def in_array(self, fields, key, array_field):
+        """checks if the value is in the array"""
+        value = fields[key]
+        array = fields[array_field]
+        if value not in array:
+            error = "The {} field must be in the {} field".format(key, array_field)
+            self.__logError(key, error)
