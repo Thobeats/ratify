@@ -51,7 +51,19 @@ class Ratify:
             "greater_than_or_equal" : self.is_greater_than_or_equal,
             "mimes" : self.is_mimes,
             "url" : self.is_url,
-            "file": self.is_file
+            "file": self.is_file,
+            "ends_with": self.is_ends_with,
+            "starts_with": self.is_starts_with,
+            "in": self.is_in,
+            "not_in": self.is_not_in,
+            "in_array": self.is_in_array,
+            "not_in_array": self.is_not_in_array,
+            "alpha": self.is_alpha,
+            "alpha_num": self.is_alpha_num,
+            "uppercase": self.is_uppercase,
+            "lowercase": self.is_lowercase,
+            "same": self.is_same,
+            "required_if": self.is_required_if
         }
         return map
 
@@ -294,7 +306,7 @@ class Ratify:
             error = "The {} field must not be in {}".format(key, options)
             self.__logError(key, error)
 
-    def in_array(self, fields, key, array_field):
+    def is_in_array(self, fields, key, array_field):
         """checks if the value is in the array"""
         value = fields[key]
         array = fields[array_field]
@@ -302,7 +314,7 @@ class Ratify:
             error = "The {} field must be in the {} field".format(key, array_field)
             self.__logError(key, error)
 
-    def not_in_array(self, fields, key, array_field):
+    def is_not_in_array(self, fields, key, array_field):
         """checks if the value is not in the array"""
         value = fields[key]
         array = fields[array_field]
@@ -338,3 +350,19 @@ class Ratify:
             error = "The {} field must be lowercase".format(key)
             self.__logError(key, error)
 
+    def is_same(self, fields, key, other_field):
+        """checks if the value is the same as another field"""
+        value = fields[key]
+        if value != fields[other_field]:
+            error = "The {} field must be the same as the {} field".format(key, other_field)
+            self.__logError(key, error)
+
+    def is_required_if(self, fields, key, other_field):
+        """checks if the value is required if another field is present"""
+        value = fields[key]
+        reference = other_field.split(",")
+        reference_value = fields[reference[0]]
+        reference.remove(reference[0])
+        if reference_value in reference and value is None:
+            error = "The {} field is required".format(key)
+            self.__logError(key, error)
