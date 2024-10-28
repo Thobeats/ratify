@@ -301,3 +301,40 @@ class Ratify:
         if value not in array:
             error = "The {} field must be in the {} field".format(key, array_field)
             self.__logError(key, error)
+
+    def not_in_array(self, fields, key, array_field):
+        """checks if the value is not in the array"""
+        value = fields[key]
+        array = fields[array_field]
+        if value in array:
+            error = "The {} field must not be in the {} field".format(key, array_field)
+            self.__logError(key, error)
+
+    def is_alpha(self, fields, key):
+        """checks if the value is alphabetic"""
+        value = fields[key]
+        if not value.isalpha():
+            error = "The {} field must be alphabetic".format(key)
+            self.__logError(key, error)
+
+    def is_alpha_num(self, fields, key):
+        """checks if the value is alphanumeric"""
+        value = fields[key]
+        if not value.isalnum():
+            error = "The {} field must be alphanumeric".format(key)
+            self.__logError(key, error)
+
+    def is_uppercase(self, fields, key):
+        """checks if the value is uppercase"""
+        value = fields[key]
+        if not value.isupper():
+            error = "The {} field must be uppercase".format(key)
+            self.__logError(key, error)
+
+    def is_lowercase(self, fields, key):
+        """checks if the value is lowercase"""
+        value = fields[key]
+        if not value.islower():
+            error = "The {} field must be lowercase".format(key)
+            self.__logError(key, error)
+
