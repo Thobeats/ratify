@@ -3,6 +3,7 @@
 
 from jsonschema.exceptions import ValidationError
 import re
+import datetime
 
 class Ratify:
 
@@ -63,7 +64,10 @@ class Ratify:
             "uppercase": self.is_uppercase,
             "lowercase": self.is_lowercase,
             "same": self.is_same,
-            "required_if": self.is_required_if
+            "required_if": self.is_required_if,
+            "date": self.is_date,
+            "datetime": self.is_datetime,
+            "date_format": self.is_date_format
         }
         return map
 
@@ -188,30 +192,33 @@ class Ratify:
         """checks the size of the value"""
         value = fields[key]
         if isinstance(value, int):
-            if value != size:
+            if value != int(size):
                 error = "The {} field must be {}".format(key, size)
                 self.__logError(key, error)
         elif isinstance(value, str):
-            if len(value) != size:
+            if len(value) != int(size):
                 error = "The {} field must be {} characters".format(key, size)
                 self.__logError(key, error)
         elif isinstance(value, list):
-            if len(value) != size:
+            if len(value) != int(size):
                 error = "The {} field must contain {} items".format(key, size)
                 self.__logError(key, error)
 
     def is_contains(self, fields, key, needle):
         """checks if the value contains the given value"""
         self.is_list(fields, key)
-        value = fields[key]
+        value = list(map(str, fields[key]))
         if needle not in value:
-            error = "The {} field must contain {}".format(key, value)
+            error = "The {} field must contain {}".format(key, needle)
             self.__logError(key, error)
 
     def is_confirm_password(self, fields, key, password_field):
         """checks if the value is the same as the password"""
         value = fields[key]
-        if value != fields[password_field]:
+        if password_field not in fields.keys():
+            error = "The {} field is missing".format(password_field)
+            self.__logError(key, error)
+        elif value != fields[password_field]:
             error = "The {} field must be the same as the {}".format(key, password_field)
             self.__logError(key, error)
 
@@ -365,4 +372,31 @@ class Ratify:
         reference.remove(reference[0])
         if reference_value in reference and value is None:
             error = "The {} field is required".format(key)
+            self.__logError(key, error)
+
+    def is_date(self, fields, key):
+        """checks if the value is a date"""
+        value = fields[key]
+        try:
+            datetime.datetime.strptime(value, "%Y-%m-%d")
+        except ValueError:
+            error = "The {} field must be a date".format(key)
+            self.__logError(key, error)
+
+    def is_datetime(self, fields, key):
+        """checks if the value is a datetime"""
+        value = fields[key]
+        try:
+            datetime.datetime.strptime(value, "%Y-%m-%d %H:%M:%S")
+        except ValueError:
+            error = "The {} field must be a datetime".format(key)
+            self.__logError(key, error)
+
+    def is_date_format(self, fields, key, date_format):
+        """checks if the value is in the given date format"""
+        value = fields[key]
+        try:
+            datetime.datetime.strptime(value, date_format)
+        except ValueError:
+            error = "The {} field must be in the {} format".format(key, date_format)
             self.__logError(key, error)
