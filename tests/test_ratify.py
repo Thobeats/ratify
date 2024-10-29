@@ -370,5 +370,66 @@ class TestRatify(unittest.TestCase):
         result = ratify.make(data, rule)
         self.assertDictEqual(data, result)
 
+    def test_is_ends_with(self):
+        """Test the ends_with validator"""
+        data = {"name": "Jones"}
+        rule = {"name": ['required', 'ends_with:ss']}
+        ratify = Ratify()
+        self.assertRaises(ValidationError, ratify.make, data, rule)
+
+    def test_is_ends_with_(self):
+        """Test the ends_with validator"""
+        data = {"name": "Jones"}
+        rule = {"name": ['required', 'ends_with:es']}
+        ratify = Ratify()
+        result = ratify.make(data, rule)
+        self.assertDictEqual(data, result)
+
+    def test_is_starts_with(self):
+        """Test the starts_with validator"""
+        data = {"name": "Jones"}
+        rule = {"name": ['required', 'starts_with:Mo']}
+        ratify = Ratify()
+        self.assertRaises(ValidationError, ratify.make, data, rule)
+
+    def test_is_starts_with_(self):
+        """Test the starts_with validator"""
+        data = {"name": "Jones"}
+        rule = {"name": ['required', 'starts_with:Jo']}
+        ratify = Ratify()
+        result = ratify.make(data, rule)
+        self.assertDictEqual(data, result)
+
+    def test_is_in(self):
+        """Test the in validator"""
+        data = {"name": "Jones"}
+        rule = {"name": ['required', 'in:Joness,Mo']}
+        ratify = Ratify()
+        self.assertRaises(ValidationError, ratify.make, data, rule)
+
+    def test_is_in_(self):
+        """Test the in validator"""
+        data = {"name": "Jones"}
+        rule = {"name": ['required', 'in:Jones,Mo']}
+        ratify = Ratify()
+        result = ratify.make(data, rule)
+        self.assertDictEqual(data, result)
+
+    def test_is_not_in(self):
+        """Test the not_in validator"""
+        data = {"name": "Jones"}
+        rule = {"name": ['required', 'not_in:Jones,Mo']}
+        ratify = Ratify()
+        self.assertRaises(ValidationError, ratify.make, data, rule)
+
+    def test_is_not_in_(self):
+        """Test the not_in validator"""
+        data = {"name": "Jones"}
+        rule = {"name": ['required', 'not_in:Joness,Mo']}
+        ratify = Ratify()
+        result = ratify.make(data, rule)
+        self.assertDictEqual(data, result)
+
+
 if __name__ == '__main__':
     unittest.main()
