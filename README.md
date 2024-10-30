@@ -1,7 +1,11 @@
 <h1>RATIFY </h1>
 
-website: <a href='https://pypi.org/project/ratify/'>ratify</a>
+<div>website: <a href='https://pypi.org/project/ratify/'>ratify</a>
+</div>
+
+<div>
 documentation: <a href='https://iyanu.com.ng/ratify'>documentation </a>
+</div>
 
 <p>Ratify is a python based validator. It can be used to validate strings, integers, floats, lists and dicts.</p>
 
