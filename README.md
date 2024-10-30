@@ -12,28 +12,28 @@
     </p>
 
 <div class="bg-gray-100 p-4 rounded-lg text-center flex cursor-pointer justify-between mt-2 w-full">
-```python
-from ratify.ratify import Ratify
+    ```python
+        from ratify.ratify import Ratify
 
-validator = Ratify()
+        validator = Ratify()
 
-try:
-    data = {
-        "name": "John Doe",
-        "email": "john@ratify.com",
-        "age": 25
-    }
+        try:
+            data = {
+                "name": "John Doe",
+                "email": "john@ratify.com",
+                "age": 25
+            }
 
-    rule = {
-        "name": ['required'],
-        "email": ['required', 'email'],
-        "age": ['required', 'integer', 'max:30']
-    }
+            rule = {
+                "name": ['required'],
+                "email": ['required', 'email'],
+                "age": ['required', 'integer', 'max:30']
+            }
 
-    validated = validator.make(data, rule)
-except ValidationError as e:
-    print(e)
-```                  
+            validated = validator.make(data, rule)
+        except ValidationError as e:
+            print(e)
+    ```                  
 </div>
 
 </div>
