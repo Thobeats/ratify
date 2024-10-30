@@ -1,0 +1,33 @@
+body, section{
+    scroll-behavior: smooth;
+}
+
+
+.londrina-sketch-regular {
+    font-family: "Londrina Sketch", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.inter-regular {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.inter-bold {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+rule{
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    font-family: monospace;
+    font-weight: 700;
+    color: darkblue;
+}

@@ -1,0 +1,1246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ratify</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Sketch&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/ratify.css">
+</head>
+<body>
+
+    <main class="max-w-[1440px] mx-auto">
+        <nav class="bg-gray-800">
+            <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+              <div class="relative flex h-16 items-center justify-between">
+                <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+                  <div class="flex flex-shrink-0 items-center">
+                    <span class="londrina-sketch-regular text-white text-3xl">Ratify.py</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </nav>
+        <section class="grid grid-cols-1 md:grid-cols-12 gap-4 h-[100vh]">
+            <aside class="col-start-1 col-end-4 h-full p-6 border">
+                <div class="font-semibold inter-bold">
+                    <span class="text-2xl">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 inline-block">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                          </svg>                             
+                    </span>
+
+                    <span class="text-md ml-2">
+                        Get started
+                    </span>
+                </div>
+                <ul class="flex flex-col mt-3 inter-regular text-sm">
+                    <li class="py-1">
+                        <a href="#overview">Overview</a>
+                    </li>
+                    <li class="py-1">
+                        <a href="#installation">Installation</a>
+                    </li>                    
+                    <!-- <li class="py-1">
+                        <a href="">Support</a>
+                    </li>                     -->
+                </ul>
+                <div class="mt-4 font-semibold inter-bold">
+                    <span class="text-2xl">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 inline-block">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9.594 3.94c.09-.542.56-.94 1.11-.94h2.593c.55 0 1.02.398 1.11.94l.213 1.281c.063.374.313.686.645.87.074.04.147.083.22.127.325.196.72.257 1.075.124l1.217-.456a1.125 1.125 0 0 1 1.37.49l1.296 2.247a1.125 1.125 0 0 1-.26 1.431l-1.003.827c-.293.241-.438.613-.43.992a7.723 7.723 0 0 1 0 .255c-.008.378.137.75.43.991l1.004.827c.424.35.534.955.26 1.43l-1.298 2.247a1.125 1.125 0 0 1-1.369.491l-1.217-.456c-.355-.133-.75-.072-1.076.124a6.47 6.47 0 0 1-.22.128c-.331.183-.581.495-.644.869l-.213 1.281c-.09.543-.56.94-1.11.94h-2.594c-.55 0-1.019-.398-1.11-.94l-.213-1.281c-.062-.374-.312-.686-.644-.87a6.52 6.52 0 0 1-.22-.127c-.325-.196-.72-.257-1.076-.124l-1.217.456a1.125 1.125 0 0 1-1.369-.49l-1.297-2.247a1.125 1.125 0 0 1 .26-1.431l1.004-.827c.292-.24.437-.613.43-.991a6.932 6.932 0 0 1 0-.255c.007-.38-.138-.751-.43-.992l-1.004-.827a1.125 1.125 0 0 1-.26-1.43l1.297-2.247a1.125 1.125 0 0 1 1.37-.491l1.216.456c.356.133.751.072 1.076-.124.072-.044.146-.086.22-.128.332-.183.582-.495.644-.869l.214-1.28Z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                        </svg>                                                      
+                    </span>
+
+                    <span class="text-md ml-2">
+                        Configurations
+                    </span>
+                </div>
+                <ul class="flex flex-col mt-3 inter-regular text-sm">
+                    <li class="py-1">
+                        <a href="#make">make</a>
+                    </li>
+                    <li class="py-1">
+                        <a href="#alpha">alpha</a>
+                    </li>
+                    <li class="py-1">
+                        <a href="#alpha_num">alpha_num</a>
+                    </li>
+                    <li class="py-1">
+                        <a href="#after">after</a>
+                    </li>
+                    <li class="py-1">
+                        <a href="#after_or_equal">after_or_equal</a>
+                    </li>
+                    <li class="py-1">
+                        <a href="#before">before</a>
+                    </li>
+                    <li class="py-1">
+                        <a href="#before_or_equal">before_or_equal</a>
+                    </li>
+                    <li class="py-1">
+                        <a href="#boolean">boolean</a>
+                    </li>
+                    <li class="py-1">
+                        <a href="#confirm_password">confirm_password</a>
+                    </li>
+                    <li class="py-1">
+                        <a href="#contains">contains</a>
+                    </li>
+                    <li class="py-1">
+                        <a href="#date">date</a>
+                    </li>
+                    <li class="py-1">
+                        <a href="#date_format">date_format</a>
+                    </li>
+                    <li class="py-1">
+                        <a href="#datetime">datetime</a>
+                    </li>
+                    <li class="py-1">
+                        <a href="#email">email</a>
+                    </li> 
+                    <li class="py-1">
+                        <a href="#ends_with">ends_with</a>
+                    </li> 
+                    <li class="py-1">
+                        <a href="#file">file</a>
+                    </li> 
+                    <li class="py-1">
+                        <a href="#float">float</a>
+                    </li> 
+                    <li class="py-1">
+                        <a href="#greater_than">greater_than</a>
+                    </li> 
+                    <li class="py-1">
+                        <a href="#greater_than_or_equal">greater_than_or_equal</a>
+                    </li> 
+                    <li class="py-1">
+                        <a href="#in">in</a>
+                    </li>
+                    <li class="py-1">
+                        <a href="#less_than">less_than</a>
+                    </li>
+                    <li class="py-1">
+                        <a href="#less_than_or_equal">less_than_or_equal</a>
+                    </li>
+                    <li class="py-1">
+                        <a href="#list">list</a>
+                    </li>
+                    <li class="py-1">
+                        <a href="#lowercase">lowercase</a>
+                    </li>
+                    <li class="py-1">
+                        <a href="#max">max</a>
+                    </li>
+                    <li class="py-1">
+                        <a href="#mimes">mimes</a>
+                    </li>
+                    <li class="py-1">
+                        <a href="#min">min</a>
+                    </li>
+                    <li class="py-1">
+                        <a href="#not_in">not_in</a>
+                    </li>
+                    <li class="py-1">
+                        <a href="#required">required</a>
+                    </li>
+                    <li class="py-1">
+                        <a href="#required_if">required_if</a>
+                    </li>                   
+                </ul>
+            </aside>
+            <section class="col-start-4 col-end-13 h-full overflow-y-scroll inter-regular">
+                <div class="px-4 py-12 min-h-[100vh]" id="overview">
+                    <h6 class="text-gray-400 inter-bold my-2">Home</h6>
+                    <h1 class="text-4xl font-bold inter-bold">Welcome to Ratify</h1>
+                    <p class="text-wrap my-3">
+                        Congratulations on choosing Ratify! Ratify is a Python library that allows you to validate data against a schema. Whether you are a pro or a beginner, Ratify is designed to be simple and easy to use.
+                        This guide will walk you through the installation process and help you get started with Ratify.
+                    </p>
+                    <div class="flex gap-4">
+                        <button class="bg-gray-800 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded">
+                            Get Started
+                        </button>
+                        <button class="bg-white text-gray-800 font-bold py-2 px-4 rounded border">
+                            Support
+                        </button>
+                    </div>
+                    <h2 class="text-xl font-bold mt-6">What is Ratify?</h2>
+                    <p class="text-wrap my-3">Ratify is a Python library that allows you to validate data against a schema. It is designed to be simple and easy to use.</p>
+                    <h2 class="text-xl font-bold mt-6">Why use Ratify?</h2>
+                    <p class="text-wrap my-3">Ratify is designed to be simple and easy to use. It is a lightweight library that is easy to integrate into your project.</p>
+                </div>
+
+                <div class="px-4 py-12 min-h-[100vh]" id="installation">
+                    <h2 class="text-4xl font-bold mt-6">Installation</h2>
+                    <p class="text-wrap my-3">You can install ratify using pip</p>
+                    <div class="bg-gray-100 p-4 rounded-lg text-center flex cursor-pointer justify-between mt-2 w-80">
+                        <code class="language-bash">
+                            pip install ratify
+                        </code>
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75" />
+                            </svg>
+                        </span>                      
+                    </div>
+
+                    <h2 class="text-xl font-bold mt-3">Dependencies</h2>
+                    <p class="text-wrap my-3">
+                        You need to have Python 3.6 or higher installed on your system to use Ratify. You also need to install the jsonschema module from pip
+                    </p>
+                    <div class="bg-gray-100 p-4 rounded-lg text-center flex cursor-pointer justify-between mt-2 w-80">
+                        <code class="language-bash">
+                            pip install jsonschema
+                        </code>
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75" />
+                            </svg>
+                        </span>                      
+                    </div>
+
+
+                    <p class="text-wrap my-3">
+                        To use Ratify, you need to import the Ratify class and create an instance of it. You can then use the make method to validate your data against a schema.
+                    </p>
+
+
+                    <div class="bg-gray-100 p-4 rounded-lg text-center flex cursor-pointer justify-between mt-2 w-full">
+                        <code class="language-bash text-left">
+                            from ratify.ratify import Ratify <br> <br>
+
+                            validator = Ratify() <br>
+
+                            data = {
+                                "name": "John Doe",<br>
+                                "email": "john@ratify.com"<br>
+                            } <br><br>
+
+                            rule = {
+                                "name": ['required'],<br>
+                                "email": ['required', 'email']<br>
+                            } <br><br>
+
+                            validated = validator.make(data, rule)                            
+                        </code>
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75" />
+                            </svg>
+                        </span>                      
+                    </div>
+                </div>
+
+                <div class="px-4 py-12 min-h-[100vh]" id="make">
+                    <h2 class="text-xl font-bold mt-6">make</h2>
+                    <p class="text-wrap my-3">
+                        The make method is used to validate data against a schema. The make method takes two arguments, data and rule. The data argument is the data that you want to validate, and the rule argument is the schema that you want to validate the data against.
+                    </p>
+                    <p class="text-wrap my-3">
+                        The make method returns a dictionary with the validated data. If the data is invalid, the make method raises a ValidationError exception.
+                    </p>
+
+                    <div class="bg-gray-100 p-4 rounded-lg text-center flex cursor-pointer justify-between mt-2 w-full">
+                        <code class="language-bash text-left text-sm">
+                            from ratify.ratify import Ratify <br> <br>
+
+                            validator = Ratify() <br><br>
+                            try: <br>
+                                &nbsp;&nbsp; data = { <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp; "name": "John Doe", <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp; "email": "john@ratify.com", <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp; "age": 25 <br>
+                                &nbsp;&nbsp; } <br><br>
+
+                                &nbsp;&nbsp; rule = { <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;"name": ['required'],<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;"email": ['required', 'email'],<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;"age": ['required', 'integer', 'max:30']<br>
+                                &nbsp;&nbsp;} <br>
+
+                                &nbsp;&nbsp;validated = validator.make(data, rule) <br>
+                            except ValidationError as e: <br>
+                                &nbsp;&nbsp;print(e) <br>                         
+                        </code>
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75" />
+                            </svg>
+                        </span>                      
+                    </div>
+
+                </div>
+
+                <div class="px-4 py-12 min-h-[100vh]" id="alpha">
+                    <h2 class="text-xl font-bold mt-6">alpha</h2>
+                    <rule>alpha</rule>
+
+                    <p class="text-wrap my-3">
+                        The alpha rule is used to check if a field contains only alphabetic characters. If the field contains any non-alphabetic characters, the alpha rule raises a ValidationError exception.
+                    </p>
+                    <p class="text-wrap my-3">
+                        The alpha rule does not take any arguments.
+                    </p>
+
+                    <div class="bg-gray-100 p-4 rounded-lg text-center flex cursor-pointer justify-between mt-3 w-full">
+                        <code class="language-bash text-left text-sm">
+                            from ratify.ratify import Ratify <br> <br>
+
+                            validator = Ratify() <br><br>
+                            try: <br>
+                                &nbsp;&nbsp; data = { <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp; "name": "John Doe", <br>
+                                &nbsp;&nbsp; } <br><br>
+
+                                &nbsp;&nbsp; rule = { <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;"name": ['alpha'],<br>
+                                &nbsp;&nbsp;} <br>
+
+                                &nbsp;&nbsp;validated = validator.make(data, rule) <br>
+                            except ValidationError as e: <br>
+                                &nbsp;&nbsp;print(e) <br>                         
+                        </code>
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75" />
+                            </svg>
+                        </span>                      
+                    </div>
+
+                </div>
+
+                <div class="px-4 py-12 min-h-[100vh]" id="alpha_num">
+                    <h2 class="text-xl font-bold mt-6">alpha_num</h2>
+                    <rule>alpha_num</rule>
+
+                    <p class="text-wrap my-3">
+                        The alpha_num rule is used to check if a field contains only alphabetic and numeric characters. If the field contains any non-alphabetic or non-numeric characters, the alpha_num rule raises a ValidationError exception.
+                    </p>
+                    <p class="text-wrap my-3">
+                        The alpha_num rule does not take any arguments.
+                    </p>
+
+                    <div class="bg-gray-100 p-4 rounded-lg text-center flex cursor-pointer justify-between mt-3 w-full">
+                        <code class="language-bash text-left text-sm">
+                            from ratify.ratify import Ratify <br> <br>
+
+                            validator = Ratify() <br><br>
+                            try: <br>
+                                &nbsp;&nbsp; data = { <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp; "username": "JohnDoe657", <br>
+                                &nbsp;&nbsp; } <br><br>
+
+                                &nbsp;&nbsp; rule = { <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;"username": ['alpha_num'],<br>
+                                &nbsp;&nbsp;} <br>
+
+                                &nbsp;&nbsp;validated = validator.make(data, rule) <br>
+                            except ValidationError as e: <br>
+                                &nbsp;&nbsp;print(e) <br>                         
+                        </code>
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75" />
+                            </svg>
+                        </span>                      
+                    </div>
+
+                </div>
+
+                <div class="px-4 py-12 min-h-[100vh]" id="after">
+                    <h2 class="text-xl font-bold mt-6">after</h2>
+                    <rule>after:date</rule>
+
+                    <p class="text-wrap my-3">
+                        The after rule is used to check if a date is after a specified date. If the date is not after the specified date, the after rule raises a ValidationError exception.
+                    </p>
+                    <p class="text-wrap my-3">
+                        The after rule takes one argument, date, which is the date that the field should be after. The date argument should be in the format YYYY-MM-DD.
+                    </p>
+
+                    <div class="bg-gray-100 p-4 rounded-lg text-center flex cursor-pointer justify-between mt-3 w-full">
+                        <code class="language-bash text-left text-sm">
+                            from ratify.ratify import Ratify <br> <br>
+
+                            validator = Ratify() <br><br>
+                            try: <br>
+                                &nbsp;&nbsp; data = { <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp; "start": "2024-10-20", <br>
+                                &nbsp;&nbsp; } <br><br>
+
+                                &nbsp;&nbsp; rule = { <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;"start": ['after:2024-11-01'],<br>
+                                &nbsp;&nbsp;} <br>
+
+                                &nbsp;&nbsp;validated = validator.make(data, rule) <br>
+                            except ValidationError as e: <br>
+                                &nbsp;&nbsp;print(e) <br>                         
+                        </code>
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75" />
+                            </svg>
+                        </span>                      
+                    </div>
+
+                </div>
+
+                <div class="px-4 py-12 min-h-[100vh]" id="after_or_equal">
+                    <h2 class="text-xl font-bold mt-6">after_or_equal</h2>
+                    <rule>after_or_equal:date</rule>
+
+                    <p class="text-wrap my-3">
+                        The after_or_equal rule is used to check if a date is after or equal to a specified date. If the date is not after or equal to the specified date, the after_or_equal rule raises a ValidationError exception.
+                    </p>
+                    <p class="text-wrap my-3">
+                        The after_or_equal rule takes one argument, date, which is the date that the field should be after or equal to. The date argument should be in the format YYYY-MM-DD.
+                    </p>
+
+                    <div class="bg-gray-100 p-4 rounded-lg text-center flex cursor-pointer justify-between mt-3 w-full">
+                        <code class="language-bash text-left text-sm">
+                            from ratify.ratify import Ratify <br> <br>
+
+                            validator = Ratify() <br><br>
+                            try: <br>
+                                &nbsp;&nbsp; data = { <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp; "start_date": "2024-10-20", <br>
+                                &nbsp;&nbsp; } <br><br>
+
+                                &nbsp;&nbsp; rule = { <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;"start_date": ['after_or_equal:2024-11-01'],<br>
+                                &nbsp;&nbsp;} <br>
+
+                                &nbsp;&nbsp;validated = validator.make(data, rule) <br>
+                            except ValidationError as e: <br>
+                                &nbsp;&nbsp;print(e) <br>                         
+                        </code>
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75" />
+                            </svg>
+                        </span>                      
+                    </div>
+
+                </div>
+
+                <div class="px-4 py-12 min-h-[100vh]" id="before">
+                    <h2 class="text-xl font-bold mt-6">before</h2>
+                    <rule>before:date</rule>
+
+                    <p class="text-wrap my-3">
+                        The before rule is used to check if a date is before a specified date. If the date is not before the specified date, the before rule raises a ValidationError exception.
+                    </p>
+                    <p class="text-wrap my-3">
+                        The before rule takes one argument, date, which is the date that the field should be before. The date argument should be in the format YYYY-MM-DD.
+                    </p>
+
+                    <div class="bg-gray-100 p-4 rounded-lg text-center flex cursor-pointer justify-between mt-3 w-full">
+                        <code class="language-bash text-left text-sm">
+                            from ratify.ratify import Ratify <br> <br>
+
+                            validator = Ratify() <br><br>
+                            try: <br>
+                                &nbsp;&nbsp; data = { <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp; "deadline": "2024-10-20", <br>
+                                &nbsp;&nbsp; } <br><br>
+
+                                &nbsp;&nbsp; rule = { <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;"deadline": ['after:2024-11-01'],<br>
+                                &nbsp;&nbsp;} <br>
+
+                                &nbsp;&nbsp;validated = validator.make(data, rule) <br>
+                            except ValidationError as e: <br>
+                                &nbsp;&nbsp;print(e) <br>                         
+                        </code>
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75" />
+                            </svg>
+                        </span>                      
+                    </div>
+
+                </div>
+
+                <div class="px-4 py-12 min-h-[100vh]" id="before_or_equal">
+                    <h2 class="text-xl font-bold mt-6">before_or_equal</h2>
+                    <rule>before_or_equal:date</rule>
+
+                    <p class="text-wrap my-3">
+                        The before_or_equal rule is used to check if a date is before or equal to a specified date. If the date is not before or equal to the specified date, the before_or_equal rule raises a ValidationError exception.
+                    </p>
+                    <p class="text-wrap my-3">
+                        The before_or_equal rule takes one argument, date, which is the date that the field should be before or equal to. The date argument should be in the format YYYY-MM-DD.
+                    </p>
+
+                    <div class="bg-gray-100 p-4 rounded-lg text-center flex cursor-pointer justify-between mt-3 w-full">
+                        <code class="language-bash text-left text-sm">
+                            from ratify.ratify import Ratify <br> <br>
+
+                            validator = Ratify() <br><br>
+                            try: <br>
+                                &nbsp;&nbsp; data = { <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp; "deadline"2024-10-20", <br>
+                                &nbsp;&nbsp; } <br><br>
+
+                                &nbsp;&nbsp; rule = { <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;"deadline['before_or_equal:2024-11-01'],<br>
+                                &nbsp;&nbsp;} <br>
+
+                                &nbsp;&nbsp;validated = validator.make(data, rule) <br>
+                            except ValidationError as e: <br>
+                                &nbsp;&nbsp;print(e) <br>                         
+                        </code>
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75" />
+                            </svg>
+                        </span>                      
+                    </div>
+
+                </div>
+
+                <div class="px-4 py-12 min-h-[100vh]" id="boolean">
+                    <h2 class="text-xl font-bold mt-6">boolean</h2>
+                    <rule>boolean</rule>
+
+                    <p class="text-wrap my-3">
+                        The boolean rule is used to check if a field is a boolean value. If the field is not a boolean value, the boolean rule raises a ValidationError exception.
+                    </p>
+                    <p class="text-wrap my-3">
+                        The boolean rule does not take any arguments.
+                    </p>
+
+                    <div class="bg-gray-100 p-4 rounded-lg text-center flex cursor-pointer justify-between mt-3 w-full">
+                        <code class="language-bash text-left text-sm">
+                            from ratify.ratify import Ratify <br> <br>
+
+                            validator = Ratify() <br><br>
+                            try: <br>
+                                &nbsp;&nbsp; data = { <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp; "is_available": True <br>
+                                &nbsp;&nbsp; } <br><br>
+
+                                &nbsp;&nbsp; rule = { <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;"is_available": ['boolean'],<br>
+                                &nbsp;&nbsp;} <br>
+
+                                &nbsp;&nbsp;validated = validator.make(data, rule) <br>
+                            except ValidationError as e: <br>
+                                &nbsp;&nbsp;print(e) <br>                         
+                        </code>
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75" />
+                            </svg>
+                        </span>                      
+                    </div>
+
+                </div>
+
+                <div class="px-4 py-12 min-h-[100vh]" id="confirm_password">
+                    <h2 class="text-xl font-bold mt-6">confirm_password</h2>
+                    <rule>confirm_password:password_field</rule>
+
+                    <p class="text-wrap my-3">
+                        The confirm_password rule is used to check if a field matches another field. If the field does not match the other field, the confirm_password rule raises a ValidationError exception.
+                    </p>
+                    <p class="text-wrap my-3">
+                        The confirm_password rule takes one argument, password_field, which is the field that the field should match.
+                    </p>
+
+                    <div class="bg-gray-100 p-4 rounded-lg text-center flex cursor-pointer justify-between mt-3 w-full">
+                        <code class="language-bash text-left text-sm">
+                            from ratify.ratify import Ratify <br> <br>
+
+                            validator = Ratify() <br><br>
+                            try: <br>
+                                &nbsp;&nbsp; data = { <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp; "enter_password": "1234Password ",<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp; "confirm_password": "1234Password "<br>
+                                &nbsp;&nbsp; } <br><br>
+
+                                &nbsp;&nbsp; rule = { <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;"confirm_password": ['confirm_password:enter_password']<br>
+                                &nbsp;&nbsp;} <br>
+
+                                &nbsp;&nbsp;validated = validator.make(data, rule) <br>
+                            except ValidationError as e: <br>
+                                &nbsp;&nbsp;print(e) <br>                         
+                        </code>
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75" />
+                            </svg>
+                        </span>                      
+                    </div>
+
+                </div>
+
+                <div class="px-4 py-12 min-h-[100vh]" id="contains">
+                    <h2 class="text-xl font-bold mt-6">contains</h2>
+                    <rule>contains:foo</rule>
+
+                    <p class="text-wrap my-3">
+                        The contains rule is used to check if a value exists in a list. If the list does not contain the specified value, the contains rule raises a ValidationError exception.
+                    </p>
+                    <p class="text-wrap my-3">
+                        The contains rule takes one argument, value, which is the value that the list should contain.
+                    </p>
+
+                    <div class="bg-gray-100 p-4 rounded-lg text-center flex cursor-pointer justify-between mt-3 w-full">
+                        <code class="language-bash text-left text-sm">
+                            from ratify.ratify import Ratify <br> <br>
+
+                            validator = Ratify() <br><br>
+                            try: <br>
+                                &nbsp;&nbsp; data = { <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp; "ages": [1, 2, 3, 4, 5]<br>
+                                &nbsp;&nbsp; } <br><br>
+
+                                &nbsp;&nbsp; rule = { <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;"ages": ['contains:3']<br>
+                                &nbsp;&nbsp;} <br>
+
+                                &nbsp;&nbsp;validated = validator.make(data, rule) <br>
+                            except ValidationError as e: <br>
+                                &nbsp;&nbsp;print(e) <br>                         
+                        </code>
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75" />
+                            </svg>
+                        </span>                      
+                    </div>
+
+                </div>
+
+                <div class="px-4 py-12 min-h-[100vh]" id="date">
+                    <h2 class="text-xl font-bold mt-6">date</h2>
+                    <rule>date</rule>
+
+                    <p class="text-wrap my-3">
+                        The date rule is used to check if a field is a valid date. If the field is not a valid date, the date rule raises a ValidationError exception.
+                    </p>
+                    <p class="text-wrap my-3">
+                        The date rule does not take any arguments.
+                    </p>
+
+                    <div class="bg-gray-100 p-4 rounded-lg text-center flex cursor-pointer justify-between mt-3 w-full">
+                        <code class="language-bash text-left text-sm">
+                            from ratify.ratify import Ratify <br> <br>
+
+                            validator = Ratify() <br><br>
+                            try: <br>
+                                &nbsp;&nbsp; data = { <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp; "start_date": "2024-10-20"<br>
+                                &nbsp;&nbsp; } <br><br>
+
+                                &nbsp;&nbsp; rule = { <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;"start_date": ['date']<br>
+                                &nbsp;&nbsp;} <br>
+
+                                &nbsp;&nbsp;validated = validator.make(data, rule) <br>
+                            except ValidationError as e: <br>
+                                &nbsp;&nbsp;print(e) <br>                         
+                        </code>
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75" />
+                            </svg>
+                        </span>                      
+                    </div>
+
+                </div>
+
+                <div class="px-4 py-12 min-h-[100vh]" id="date_format">
+                    <h2 class="text-xl font-bold mt-6">date_format</h2>
+                    <rule>date_format:format</rule>
+
+                    <p class="text-wrap my-3">
+                        The date_format rule is used to check if a field is a valid date with a specified format. If the field is not a valid date with the specified format, the date_format rule raises a ValidationError exception.
+                    </p>
+                    <p class="text-wrap my-3">
+                        The date_format rule takes one argument, format, which is the format that the date should be in. The format argument should be a valid date format string.
+                    </p>
+
+                    <div class="bg-gray-100 p-4 rounded-lg text-center flex cursor-pointer justify-between mt-3 w-full">
+                        <code class="language-bash text-left text-sm">
+                            from ratify.ratify import Ratify <br> <br>
+
+                            validator = Ratify() <br><br>
+                            try: <br>
+                                &nbsp;&nbsp; data = { <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp; "start_date": "10-20-2024"<br>
+                                &nbsp;&nbsp; } <br><br>
+
+                                &nbsp;&nbsp; rule = { <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;"start_date": ['date_format:%m-%d-%Y']<br>
+                                &nbsp;&nbsp;} <br>
+
+                                &nbsp;&nbsp;validated = validator.make(data, rule) <br>
+                            except ValidationError as e: <br>
+                                &nbsp;&nbsp;print(e) <br>                         
+                        </code>
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75" />
+                            </svg>
+                        </span>                      
+                    </div>
+
+                </div>
+
+                <div class="px-4 py-12 min-h-[100vh]" id="datetime">
+                    <h2 class="text-xl font-bold mt-6">datetime</h2>
+                    <rule>datetime</rule>
+
+                    <p class="text-wrap my-3">
+                        The datetime rule is used to check if a field is a valid datetime. If the field is not a valid datetime, the datetime rule raises a ValidationError exception.
+                    </p>
+                    <p class="text-wrap my-3">
+                        The datetime rule does not take any arguments.
+                    </p>
+
+                    <div class="bg-gray-100 p-4 rounded-lg text-center flex cursor-pointer justify-between mt-3 w-full">
+                        <code class="language-bash text-left text-sm">
+                            from ratify.ratify import Ratify <br> <br>
+
+                            validator = Ratify() <br><br>
+                            try: <br>
+                                &nbsp;&nbsp; data = { <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp; "start_date": "2024-10-20 12:30:05"<br>
+                                &nbsp;&nbsp; } <br><br>
+
+                                &nbsp;&nbsp; rule = { <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;"start_date": ['datetime']<br>
+                                &nbsp;&nbsp;} <br>
+
+                                &nbsp;&nbsp;validated = validator.make(data, rule) <br>
+                            except ValidationError as e: <br>
+                                &nbsp;&nbsp;print(e) <br>                         
+                        </code>
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75" />
+                            </svg>
+                        </span>                      
+                    </div>
+
+                </div>
+
+                <div class="px-4 py-12 min-h-[100vh]" id="dict">
+                    <h2 class="text-xl font-bold mt-6">dict</h2>
+                    <rule>dict</rule>
+
+                    <p class="text-wrap my-3">
+                        The dict rule is used to check if a field is a valid dictionary. If the field is not a valid dictionary, the dict rule raises a ValidationError exception.
+                    </p>
+                    <p class="text-wrap my-3">
+                        The dict rule takes no argument
+                    </p>
+
+                    <div class="bg-gray-100 p-4 rounded-lg text-center flex cursor-pointer justify-between mt-3 w-full">
+                        <code class="language-bash text-left text-sm">
+                            from ratify.ratify import Ratify <br> <br>
+
+                            validator = Ratify() <br><br>
+                            try: <br>
+                                &nbsp;&nbsp; data = { <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp; "inventory": {"name": "John Doe", "age": 23, "country": "Nigeria"}<br>
+                                &nbsp;&nbsp; } <br><br>
+
+                                &nbsp;&nbsp; rule = { <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;"inventory: ['dict']<br>
+                                &nbsp;&nbsp;} <br>
+
+                                &nbsp;&nbsp;validated = validator.make(data, rule) <br>
+                            except ValidationError as e: <br>
+                                &nbsp;&nbsp;print(e) <br>                         
+                        </code>
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75" />
+                            </svg>
+                        </span>                      
+                    </div>
+
+                </div>
+
+                <div class="px-4 py-12 min-h-[100vh]" id="email">
+                    <h2 class="text-xl font-bold mt-6">email</h2>
+                    <rule>email</rule>
+
+                    <p class="text-wrap my-3">
+                        The email rule is used to check if a field is a valid email address. If the field is not a valid email address, the email rule raises a ValidationError exception.
+                    </p>
+                    <p class="text-wrap my-3">
+                        The email rule does not take any arguments.
+                    </p>
+
+                    <div class="bg-gray-100 p-4 rounded-lg text-center flex cursor-pointer justify-between mt-3 w-full">
+                        <code class="language-bash text-left text-sm">
+                            from ratify.ratify import Ratify <br> <br>
+
+                            validator = Ratify() <br><br>
+                            try: <br>
+                                &nbsp;&nbsp; data = { <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp; "email_address": "john@ratify.com", <br>
+                                &nbsp;&nbsp; } <br><br>
+
+                                &nbsp;&nbsp; rule = { <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;"email_address": ['email'],<br>
+                                &nbsp;&nbsp;} <br>
+
+                                &nbsp;&nbsp;validated = validator.make(data, rule) <br>
+                            except ValidationError as e: <br>
+                                &nbsp;&nbsp;print(e) <br>                         
+                        </code>
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75" />
+                            </svg>
+                        </span>                      
+                    </div>
+
+                </div>
+
+                <div class="px-4 py-12 min-h-[100vh]" id="ends_with">
+                    <h2 class="text-xl font-bold mt-6">ends_with</h2>
+                    <rule>ends_with:foo</rule>
+
+                    <p class="text-wrap my-3">
+                        The ends_with rule is used to check if a field ends with a specified value. If the field does not end with the specified value, the ends_with rule raises a ValidationError exception.
+                    </p>
+                    <p class="text-wrap my-3">
+                        The ends_with rule takes one argument, foo, which is the value that the field should end with.
+                    </p>
+
+                    <div class="bg-gray-100 p-4 rounded-lg text-center flex cursor-pointer justify-between mt-3 w-full">
+                        <code class="language-bash text-left text-sm">
+                            from ratify.ratify import Ratify <br> <br>
+
+                            validator = Ratify() <br><br>
+                            try: <br>
+                                &nbsp;&nbsp; data = { <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp; "name": "Jones", <br>
+                                &nbsp;&nbsp; } <br><br>
+
+                                &nbsp;&nbsp; rule = { <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;"name": ['ends_with:es'],<br>
+                                &nbsp;&nbsp;} <br>
+
+                                &nbsp;&nbsp;validated = validator.make(data, rule) <br>
+                            except ValidationError as e: <br>
+                                &nbsp;&nbsp;print(e) <br>                         
+                        </code>
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75" />
+                            </svg>
+                        </span>                      
+                    </div>
+
+                </div>
+
+                <div class="px-4 py-12 min-h-[100vh]" id="file">
+                    <h2 class="text-xl font-bold mt-6">file</h2>
+                    <rule>file:extensions</rule>
+
+                    <p class="text-wrap my-3">
+                        The file rule checks if the file is a valid file and if the file has the specified extensions. If the file is not valid or does not have the specified extensions, the file rule raises a ValidationError exception.
+                    </p>
+                    <p class="text-wrap my-3">
+                        The file rule takes one argument, extensions, which is a comma-separated list of file extensions that the file should have.
+                    </p>
+
+                    <span class="text-sm text-red-500">
+                        note: The file rule only works with the Flask file object
+                    </span>
+                    <div class="bg-gray-100 p-4 rounded-lg text-center flex cursor-pointer justify-between mt-3 w-full">
+                        <code class="language-bash text-left text-sm">
+                            from ratify.ratify import Ratify <br> <br>
+
+                            validator = Ratify() <br><br>
+                            try: <br>
+                                &nbsp;&nbsp; data = { <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp; "cv": "document.pdf", <br>
+                                &nbsp;&nbsp; } <br><br>
+
+                                &nbsp;&nbsp; rule = { <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;"cv": ['file:pdf,txt,doc'],<br>
+                                &nbsp;&nbsp;} <br>
+
+                                &nbsp;&nbsp;validated = validator.make(data, rule) <br>
+                            except ValidationError as e: <br>
+                                &nbsp;&nbsp;print(e) <br>                         
+                        </code>
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75" />
+                            </svg>
+                        </span>                      
+                    </div>
+
+                </div>
+
+                <div class="px-4 py-12 min-h-[100vh]" id="float">
+                    <h2 class="text-xl font-bold mt-6">float</h2>
+                    <rule>float</rule>
+
+                    <p class="text-wrap my-3">
+                        The float rule is used to check if a field is a valid float. If the field is not a valid float, the float rule raises a ValidationError exception.
+                    </p>
+                    <p class="text-wrap my-3">
+                        The float rule does not take any arguments.
+                    </p>
+
+                    <div class="bg-gray-100 p-4 rounded-lg text-center flex cursor-pointer justify-between mt-3 w-full">
+                        <code class="language-bash text-left text-sm">
+                            from ratify.ratify import Ratify <br> <br>
+
+                            validator = Ratify() <br><br>
+                            try: <br>
+                                &nbsp;&nbsp; data = { <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp; "price": 24.32, <br>
+                                &nbsp;&nbsp; } <br><br>
+
+                                &nbsp;&nbsp; rule = { <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;"price": ['float']<br>
+                                &nbsp;&nbsp;} <br>
+
+                                &nbsp;&nbsp;validated = validator.make(data, rule) <br>
+                            except ValidationError as e: <br>
+                                &nbsp;&nbsp;print(e) <br>                         
+                        </code>
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75" />
+                            </svg>
+                        </span>                      
+                    </div>
+
+                </div>
+
+                <div class="px-4 py-12 min-h-[100vh]" id="greater_than">
+                    <h2 class="text-xl font-bold mt-6">greater_than</h2>
+                    <rule>greater_than:another_field</rule>
+
+                    <p class="text-wrap my-3">
+                        The greater_than rule is used to check if a field is greater than another field. If the field is not greater than the specified field, the greater_than rule raises a ValidationError exception.
+                    </p>
+                    <p class="text-wrap my-3">
+                        The greater_than rule takes one argument, another_field, which is the referenced field.
+                    </p>
+
+                    <div class="bg-gray-100 p-4 rounded-lg text-center flex cursor-pointer justify-between mt-3 w-full">
+                        <code class="language-bash text-left text-sm">
+                            from ratify.ratify import Ratify <br> <br>
+
+                            validator = Ratify() <br><br>
+                            try: <br>
+                                &nbsp;&nbsp; data = { <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp; "age_limit": 20, <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp; "age": 24, <br>
+                                &nbsp;&nbsp; } <br><br>
+
+                                &nbsp;&nbsp; rule = { <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;"age": ['greater_than:age_limit'],<br>
+                                &nbsp;&nbsp;} <br>
+
+                                &nbsp;&nbsp;validated = validator.make(data, rule) <br>
+                            except ValidationError as e: <br>
+                                &nbsp;&nbsp;print(e) <br>                         
+                        </code>
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75" />
+                            </svg>
+                        </span>                      
+                    </div>
+
+                </div>
+
+                <div class="px-4 py-12 min-h-[100vh]" id="greater_than_or_equal">
+                    <h2 class="text-xl font-bold mt-6">greater_than_or_equal</h2>
+                    <rule>greater_than_or_equal:another_field</rule>
+
+                    <p class="text-wrap my-3">
+                        The greater_than_or_equal rule is used to check if a field is greater than or equal to another field. If the field is not greater than or equal to the specified field, the greater_than_or_equal rule raises a ValidationError exception.
+                    </p>
+                    <p class="text-wrap my-3">
+                        The greater_than_or_equal rule takes one argument, another_field, which is the referenced field.
+                    </p>
+
+                    <div class="bg-gray-100 p-4 rounded-lg text-center flex cursor-pointer justify-between mt-3 w-full">
+                        <code class="language-bash text-left text-sm">
+                            from ratify.ratify import Ratify <br> <br>
+
+                            validator = Ratify() <br><br>
+                            try: <br>
+                                &nbsp;&nbsp; data = { <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp; "age_limit": 20, <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp; "age": 20, <br>
+                                &nbsp;&nbsp; } <br><br>
+
+                                &nbsp;&nbsp; rule = { <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;"age": ['greater_than:age_limit'],<br>
+                                &nbsp;&nbsp;} <br>
+
+                                &nbsp;&nbsp;validated = validator.make(data, rule) <br>
+                            except ValidationError as e: <br>
+                                &nbsp;&nbsp;print(e) <br>                         
+                        </code>
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75" />
+                            </svg>
+                        </span>                      
+                    </div>
+
+                </div>
+
+                <div class="px-4 py-12 min-h-[100vh]" id="in">
+                    <h2 class="text-xl font-bold mt-6">in</h2>
+                    <rule>in:foo,bar...</rule>
+
+                    <p class="text-wrap my-3">
+                        The in rule is used to check if a field is in a list of comma seperated values. If the field is not in the list of values, the in rule raises a ValidationError exception.
+                    </p>
+                    <p class="text-wrap my-3">
+                        The in rule takes one argument, "foo, bar", which is a comma-separated list of values that the field should be in.
+                    </p>
+
+                    <div class="bg-gray-100 p-4 rounded-lg text-center flex cursor-pointer justify-between mt-3 w-full">
+                        <code class="language-bash text-left text-sm">
+                            from ratify.ratify import Ratify <br> <br>
+
+                            validator = Ratify() <br><br>
+                            try: <br>
+                                &nbsp;&nbsp; data = { <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp; "age": 20 <br>
+                                &nbsp;&nbsp; } <br><br>
+
+                                &nbsp;&nbsp; rule = { <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;"age": ['in:20,21,23,25']<br>
+                                &nbsp;&nbsp; } <br>
+
+                                &nbsp;&nbsp;validated = validator.make(data, rule) <br>
+                            except ValidationError as e: <br>
+                                &nbsp;&nbsp;print(e) <br>                         
+                        </code>
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75" />
+                            </svg>
+                        </span>                      
+                    </div>
+
+                </div>
+
+                <div class="px-4 py-12 min-h-[100vh]" id="integer">
+                    <h2 class="text-xl font-bold mt-6">integer</h2>
+                    <rule>integer</rule>
+
+                    <p class="text-wrap my-3">
+                        The integer rule checks if a field contains a valid integer
+                    </p>
+                    <p class="text-wrap my-3">
+                        The integer rule takes no argument
+                    </p>
+
+                    <div class="bg-gray-100 p-4 rounded-lg text-center flex cursor-pointer justify-between mt-3 w-full">
+                        <code class="language-bash text-left text-sm">
+                            from ratify.ratify import Ratify <br> <br>
+
+                            validator = Ratify() <br><br>
+                            try: <br>
+                                &nbsp;&nbsp; data = { <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp; "age": 20 <br>
+                                &nbsp;&nbsp; } <br><br>
+
+                                &nbsp;&nbsp; rule = { <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;"age": ['in:20,21,23,25']<br>
+                                &nbsp;&nbsp; } <br>
+
+                                &nbsp;&nbsp;validated = validator.make(data, rule) <br>
+                            except ValidationError as e: <br>
+                                &nbsp;&nbsp;print(e) <br>                         
+                        </code>
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75" />
+                            </svg>
+                        </span>                      
+                    </div>
+
+                </div>
+
+                <div class="px-4 py-12 min-h-[100vh]" id="less_than">
+                    <h2 class="text-xl font-bold mt-6">less_than</h2>
+                    <rule>less_than:another_field</rule>
+
+                    <p class="text-wrap my-3">
+                        The less_than rule checks if the field under validation is less than the value in another field
+                    </p>
+                    <p class="text-wrap my-3">
+                        The less_than rule takes one argument, another_field, which is the referenced field.
+                    </p>
+
+                    <div class="bg-gray-100 p-4 rounded-lg text-center flex cursor-pointer justify-between mt-3 w-full">
+                        <code class="language-bash text-left text-sm">
+                            from ratify.ratify import Ratify <br> <br>
+
+                            validator = Ratify() <br><br>
+                            try: <br>
+                                &nbsp;&nbsp; data = { <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp; "wallet_balance": 20000 <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp; "price": 5000 <br>
+                                &nbsp;&nbsp; } <br><br>
+
+                                &nbsp;&nbsp; rule = { <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;"price": ['less_than:wallet_balance']<br>
+                                &nbsp;&nbsp; } <br>
+
+                                &nbsp;&nbsp;validated = validator.make(data, rule) <br>
+                            except ValidationError as e: <br>
+                                &nbsp;&nbsp;print(e) <br>                         
+                        </code>
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75" />
+                            </svg>
+                        </span>                      
+                    </div>
+
+                </div>
+
+                <div class="px-4 py-12 min-h-[100vh]" id="less_than_or_equal">
+                    <h2 class="text-xl font-bold mt-6">less_than_or_equal</h2>
+                    <rule>less_than_or_equal:another_field</rule>
+
+                    <p class="text-wrap my-3">
+                        The less_than_or_equal rule checks if the field under validation is less than or equals a value in another field
+                    </p>
+                    <p class="text-wrap my-3">
+                        The less_than_or_equal rule takes one argument, another_field, which is the referenced field.
+                    </p>
+
+                    <div class="bg-gray-100 p-4 rounded-lg text-center flex cursor-pointer justify-between mt-3 w-full">
+                        <code class="language-bash text-left text-sm">
+                            from ratify.ratify import Ratify <br> <br>
+
+                            validator = Ratify() <br><br>
+                            try: <br>
+                                &nbsp;&nbsp; data = { <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp; "wallet_balance": 20000 <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp; "price": 5000 <br>
+                                &nbsp;&nbsp; } <br><br>
+
+                                &nbsp;&nbsp; rule = { <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;"price": ['less_than_or_equal:wallet_balance']<br>
+                                &nbsp;&nbsp; } <br>
+
+                                &nbsp;&nbsp;validated = validator.make(data, rule) <br>
+                            except ValidationError as e: <br>
+                                &nbsp;&nbsp;print(e) <br>                         
+                        </code>
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75" />
+                            </svg>
+                        </span>                      
+                    </div>
+
+                </div>
+
+                <div class="px-4 py-12 min-h-[100vh]" id="list">
+                    <h2 class="text-xl font-bold mt-6">list</h2>
+                    <rule>list</rule>
+
+                    <p class="text-wrap my-3">
+                        The list rule verifies if a value is a valid list
+                    </p>
+                    <p class="text-wrap my-3">
+                        The list rule takes no argument.
+                    </p>
+
+                    <div class="bg-gray-100 p-4 rounded-lg text-center flex cursor-pointer justify-between mt-3 w-full">
+                        <code class="language-bash text-left text-sm">
+                            from ratify.ratify import Ratify <br> <br>
+
+                            validator = Ratify() <br><br>
+                            try: <br>
+                                &nbsp;&nbsp; data = { <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp; "students": ['Joy', 'Joel', 'Kenn', 'Kay']<br>
+                                &nbsp;&nbsp; } <br><br>
+
+                                &nbsp;&nbsp; rule = { <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;"students": ['list']<br>
+                                &nbsp;&nbsp; } <br>
+
+                                &nbsp;&nbsp;validated = validator.make(data, rule) <br>
+                            except ValidationError as e: <br>
+                                &nbsp;&nbsp;print(e) <br>                         
+                        </code>
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75" />
+                            </svg>
+                        </span>                      
+                    </div>
+
+                </div>
+
+                <div class="px-4 py-12 min-h-[100vh]" id="required">
+                    <h2 class="text-xl font-bold mt-6">required</h2>
+                    <rule>required</rule>
+
+                    <p class="text-wrap my-3">
+                        The required rule is used to check if a field is present in the data. If the field is not present, the required rule raises a ValidationError exception.
+                    </p>
+                    <p class="text-wrap my-3">
+                        The required rule does not take any arguments.
+                    </p>
+
+                    <div class="bg-gray-100 p-4 rounded-lg text-center flex cursor-pointer justify-between mt-3 w-full">
+                        <code class="language-bash text-left text-sm">
+                            from ratify.ratify import Ratify <br> <br>
+
+                            validator = Ratify() <br><br>
+                            try: <br>
+                                &nbsp;&nbsp; data = { <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp; "name": "John Doe", <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp; "email": "john@ratify.com", <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp; "age": 25 <br>
+                                &nbsp;&nbsp; } <br><br>
+
+                                &nbsp;&nbsp; rule = { <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;"name": ['required'],<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;"email": ['required'],<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;"age": ['required']<br>
+                                &nbsp;&nbsp;} <br>
+
+                                &nbsp;&nbsp;validated = validator.make(data, rule) <br>
+                            except ValidationError as e: <br>
+                                &nbsp;&nbsp;print(e) <br>                         
+                        </code>
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75" />
+                            </svg>
+                        </span>                      
+                    </div>
+
+                </div>
+
+            </section>
+
+        </section>
+    </main>    
+</body>
+</html>
