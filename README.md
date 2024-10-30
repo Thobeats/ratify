@@ -36,3 +36,36 @@
 </div>
 
 </div>
+
+<div class="px-4 py-12 min-h-[100vh]" id="alpha">
+    <h2 class="text-xl font-bold mt-6">alpha</h2>
+    <rule>alpha</rule>
+
+<p class="text-wrap my-3">
+    The alpha rule is used to check if a field contains only alphabetic characters. If the field contains any non-alphabetic characters, the alpha rule raises a ValidationError exception.
+</p>
+<p class="text-wrap my-3">
+    The alpha rule does not take any arguments.
+</p>
+
+<div class="bg-gray-100 p-4 rounded-lg text-center flex cursor-pointer justify-between mt-3 w-full">
+    from ratify.ratify import Ratify
+
+    validator = Ratify()
+
+    try:
+        data = {
+            "name": "John Doe",
+        }
+
+        rule = {
+            "name": ['alpha'],
+        }
+
+        validated = validator.make(data, rule)
+    except ValidationError as e:
+        print(e)
+                     
+</div>
+
+</div>
