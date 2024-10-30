@@ -7,7 +7,8 @@
 documentation: <a href='https://iyanu.com.ng/ratify'>documentation </a>
 </h5>
 
-<p>Ratify is a python based validator. It can be used to validate strings, integers, floats, lists and dicts.</p>
+<p> Congratulations on choosing Ratify! Ratify is a Python library that allows you to validate data against a schema. Whether you are a pro or a beginner, Ratify is designed to be simple and easy to use.
+This guide will walk you through the installation process and help you get started with Ratify..</p>
 
 <div class="px-4 py-12 min-h-[100vh]" id="make">
     <h2 class="text-xl font-bold mt-6">make</h2>
