@@ -13,7 +13,6 @@
 
 <div class="bg-gray-100 p-4 rounded-lg text-center flex cursor-pointer justify-between mt-2 w-full">
 
-      ```
         from ratify.ratify import Ratify
 
         validator = Ratify()
@@ -34,7 +33,6 @@
             validated = validator.make(data, rule)
         except ValidationError as e:
             print(e)
-    ```                  
 </div>
 
 </div>
