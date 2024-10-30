@@ -7,6 +7,10 @@
 documentation: <a href='https://iyanu.com.ng/ratify'>documentation </a>
 </h5>
 
+<h5>
+video: <a href='https://www.loom.com/share/e57fdd7008814734bfb8bb763d431b97?sid=48b9fd44-40ff-462b-ba31-e77b6b1bc0d3'>video presentation</a>
+</h5>
+
 <p> Congratulations on choosing Ratify! Ratify is a Python library that allows you to validate data against a schema. Whether you are a pro or a beginner, Ratify is designed to be simple and easy to use.
 This guide will walk you through the installation process and help you get started with Ratify..</p>
 
