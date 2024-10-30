@@ -12,27 +12,28 @@
     </p>
 
 <div class="bg-gray-100 p-4 rounded-lg text-center flex cursor-pointer justify-between mt-2 w-full">
-<code class="language-bash text-left text-sm">
-    from ratify.ratify import Ratify <br> <br>
+```python
+from ratify.ratify import Ratify
 
-    validator = Ratify() <br><br>
-    try: <br>
-        &nbsp;&nbsp; data = { <br>
-        &nbsp;&nbsp;&nbsp;&nbsp; "name": "John Doe", <br>
-        &nbsp;&nbsp;&nbsp;&nbsp; "email": "john@ratify.com", <br>
-        &nbsp;&nbsp;&nbsp;&nbsp; "age": 25 <br>
-        &nbsp;&nbsp; } <br><br>
+validator = Ratify()
 
-        &nbsp;&nbsp; rule = { <br>
-        &nbsp;&nbsp;&nbsp;&nbsp;"name": ['required'],<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;"email": ['required', 'email'],<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;"age": ['required', 'integer', 'max:30']<br>
-        &nbsp;&nbsp;} <br>
+try:
+    data = {
+        "name": "John Doe",
+        "email": "john@ratify.com",
+        "age": 25
+    }
 
-        &nbsp;&nbsp;validated = validator.make(data, rule) <br>
-    except ValidationError as e: <br>
-        &nbsp;&nbsp;print(e) <br>                         
-</code>                    
+    rule = {
+        "name": ['required'],
+        "email": ['required', 'email'],
+        "age": ['required', 'integer', 'max:30']
+    }
+
+    validated = validator.make(data, rule)
+except ValidationError as e:
+    print(e)
+```                  
 </div>
 
 </div>
